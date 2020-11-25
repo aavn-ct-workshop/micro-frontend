@@ -1,0 +1,19 @@
+version: '3.3'
+
+services:
+  # ---------------------------
+  # Application
+  # ---------------------------
+  application:
+    container_name: application
+    image: application
+    build: ./application
+    networks:
+      - micro-frontend
+    ports: 
+      - 80:80
+      - 443:443
+
+networks:
+  micro-frontend:
+    driver: bridge

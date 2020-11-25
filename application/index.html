@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="What would you do with 100 billion dollars? Find out by spending all of Bill Gates' money!">
+    <title>Spend Bill Gates's Money</title>
+    <link rel="icon" href="images/spend.png" data-react-helmet="true">
+    <link rel="stylesheet" href="css/pure-min.css">
+    <link rel="stylesheet" href="css/grids-responsive-min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--#include virtual="/team-one/static/register_styles.html" -->
+    <!--#include virtual="/team-two/static/register_styles.html" -->
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="home-menu pure-menu pure-menu-horizontal">
+            <a class="pure-menu-heading" href="">Awesome ! ! !</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <one-banner></one-banner>
+    </div>
+
+    <div class="l-content">
+        <div class="pricing-tables pure-g" id="pricing-tables">
+            <div class="pricing-amount pure-u-1 pure-u-md-3-3">
+                <one-wallet></one-wallet>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+        <div class="content center">
+            <three-receipt></three-receipt>
+        </div>
+
+        <div class="footer l-box text-center">
+            View the source of this layout to learn more. Made with love by the Technical Workshop Team.
+        </div>
+    </div>
+    
+    <!--#include virtual="/team-one/static/register_scripts.html" -->
+    <!--#include virtual="/team-two/static/register_scripts.html" -->
+    <!--#include virtual="/team-three/static/register_scripts.html" -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", (function() {
+            var productItems ="", i;
+            for (productType in products) {
+                productItems = productItems + "<div class=\"pure-u-1 pure-u-md-1-3\"> <div class=\"pricing-table\"><product-item product-type=\"" + productType + "\"> </product-item> </div> </div>";
+            }
+            productItems = "<div class=\"pricing-amount pure-u-1 pure-u-md-3-3\"> <one-wallet></one-wallet> </div>" + productItems;
+            document.getElementById("pricing-tables").innerHTML = productItems;
+            })
+        );
+        
+       
+    </script>
+</body>
+
+</html>
