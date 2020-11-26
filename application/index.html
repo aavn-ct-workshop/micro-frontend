@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="css/grids-responsive-min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <link rel="stylesheet" href="css/styles.css">
-    <!--#include virtual="/team-one/static/register_styles.html" -->
-    <!--#include virtual="/team-two/static/register_styles.html" -->
+    <link rel="stylesheet" href="http://localhost:8001/static/fragment.css">
+    <link rel="stylesheet" href="http://localhost:8002/static/fragment.css">
 </head>
 
 <body>
@@ -46,10 +46,9 @@
         </div>
     </div>
     
-    <!--#include virtual="/team-one/static/register_scripts.html" -->
-    <!--#include virtual="/team-two/static/register_scripts.html" -->
-    <!--#include virtual="/team-three/static/register_scripts.html" -->
-
+    <script src="http://localhost:8001/static/fragment.js"></script>
+    <script src="http://localhost:8002/static/fragment.js"></script>
+    <script src="http://localhost:8003/static/fragment.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", (function() {
             var productItems ="", i;
