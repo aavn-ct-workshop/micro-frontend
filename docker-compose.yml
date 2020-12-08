@@ -6,7 +6,7 @@ services:
   # ---------------------------
   team-one:
     container_name: "team-one"
-    build: ../micro-frontend-team-one
+    build: ../micro-frontend-team-one-archived
     image: team-one
     networks:
       - micro-frontend
@@ -16,7 +16,7 @@ services:
   # ---------------------------
   team-two:
     container_name: "team-two"
-    build: ../micro-frontend-team-two
+    build: ../micro-frontend-team-two-archived
     image: team-two
     networks:
       - micro-frontend
@@ -27,7 +27,7 @@ services:
   team-three:
     container_name: "team-three"
     hostname: "team-three"
-    build: ../micro-frontend-team-three
+    build: ../micro-frontend-team-three-archived
     image: team-three
     networks:
       - micro-frontend
